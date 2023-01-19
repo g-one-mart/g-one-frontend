@@ -1,6 +1,7 @@
+// import "./index.css"
 const Component = () =>{
     return (<>
-        
+             
     </>);
 }
 

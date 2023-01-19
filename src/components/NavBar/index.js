@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import "./index.css"
 
 const Component = () =>{
     return (<>
         <div className="navBar">
             <div>   
-                <img src="logo.jpeg" width="50px" height="50px"/>
+                    <Link to={"/"}>
+                         <img src="logo.jpeg" width="50px" height="50px"/>
+                    </Link>
             </div>
             <div className="searchBox">
                 <div>
