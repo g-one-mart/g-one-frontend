@@ -1,0 +1,89 @@
+
+.form{
+    background-color: white;
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+   margin-top: 50px;
+}
+ .Login{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+.butt{ 
+    align-items: center;
+    justify-content: center;
+background-color: green;
+width: 150px;
+height:35px;
+border-radius: 5px;
+}
+.butt:hover{
+    transform: scale(1.25);
+
+}
+
+ .mail, .pass{
+    justify-self: center;
+    align-items: center;
+    height:3em;
+    width:80%;
+    border-radius: 0.2em;
+    padding: 1em;
+    margin-left:  10%;
+    margin-top: 20px;
+}
+/* .mail{
+    border: none; */
+    /* background-color: rgb(65, 63, 63);
+    height:3em;
+    width:100%;
+    border-radius: 0.2em;
+    padding: 1em;
+}
+.pass{
+    border: none;
+    background-color: rgb(65, 63, 63);
+    height:3em;
+    width:100%;
+    border-radius: 0.2em;
+    padding: 1em;
+} */
+.alt-login{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.alt-login div{
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.google{background-image: url("../LoginPage/google.png");}
+.facebook{background-image: url("../LoginPage/facebook.jpg");}
+.twitter{background-image: url("../LoginPage/twitter.png");}
+.facebook:hover{
+transform: scale(1.25);
+}
+.google:hover{
+    transform: scale(1.25);
+    }
+    .twitter:hover{
+        transform: scale(1.25);
+        }
