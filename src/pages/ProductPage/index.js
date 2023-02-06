@@ -5,7 +5,7 @@ const Component = () =>{
                 <div className="productPage">
                     <div className="productImg">
                         <img src="https://cdn.shopclues.com/images1/thumbnails/112930/320/320/151885535-112930695-1653064733.jpg" 
-                        style={{width:"100%",height:"100%"}}/>
+                        style={{width:"100%",height:"100%"}} alt="not availabe"/>
                     </div>
                     <div className="productDetails">
                         <h4>Boat Headset..</h4>
