@@ -25,6 +25,11 @@ const Component = () =>{
           imgUrl:"https://cdn.shopclues.com/images1/thumbnails/112930/320/320/151885535-112930695-1653064733.jpg" 
         },
         {name:"Boat Headset",
+        originalPrice:"900",
+        priceAfterDiscount:"599" ,
+        imgUrl:"https://cdn.shopclues.com/images1/thumbnails/112930/320/320/151885535-112930695-1653064733.jpg" 
+        },
+        {name:"Boat Headset",
           originalPrice:"900",
           priceAfterDiscount:"599" ,
           imgUrl:"https://cdn.shopclues.com/images1/thumbnails/112930/320/320/151885535-112930695-1653064733.jpg" 
