@@ -1,7 +1,7 @@
 import "./index.css";
 import { useLocation } from "react-router-dom";
 import CardContainer from "../../components/CardContainer";
-import { discountCalculator } from "D:/Jsprojects/g-one/g-one-frontend/src/discountCalculator.js";
+import { discountCalculator } from "../../discountCalculator";
 const Component = () => {
   const location = useLocation();
   const product = location.state;
