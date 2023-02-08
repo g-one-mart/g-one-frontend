@@ -3,6 +3,7 @@ import './index.css';
 import HomePage from "../HomePage"
 import ProductPage from "../ProductPage"
 import LoginPage from "../LoginPage"
+import ProductInsert from "../ProductInsert"
 const Component = () => {
 
     return (
@@ -11,6 +12,8 @@ const Component = () => {
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/product" element={<ProductPage/>} />
                 <Route path="/login" element={<LoginPage/>} />
+                <Route path="/ProductInsert" element={<ProductInsert/>} />
+                
             </Routes>
         </>
     );

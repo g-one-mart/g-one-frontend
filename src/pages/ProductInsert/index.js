@@ -1,22 +1,22 @@
 import React from 'react';
-import {useState} from 'react';
+// import {useState} from 'react';
 import './index.css' ;
 const Component = ()=> {
-    const [productname, setProductName] = useState("");
-const [productprice,setProductPrice] = useState("");
-const [productdiscription, setProductDiscription] = useState("");
-const [allEntry, setAllEntry] = useState([]);
+//     const [productname, setProductName] = useState("");
+// const [productprice,setProductPrice] = useState("");
+// const [productdiscription, setProductDiscription] = useState("");
+// const [allEntry, setAllEntry] = useState([]);
 
- const submitForm = ()=>{
-    const newEntry = {text1: text1, text2: text2, text3: text3,};
-    setAllEntry([...allEntry, newEntry]);
- }
+//  const submitForm = ()=>{
+//     const newEntry = {ranj: ranj, gone: gone, fron: fron,};
+//     setAllEntry([...allEntry, newEntry]);
+//  }
   return (
     <>
     <div>
       
       
-      <form action="" onSubmit={submitForm} className="form">
+      <form action=""  className="product">
            <div className="Login">
            <h1>Add A Product</h1>
         </div>
@@ -24,24 +24,24 @@ const [allEntry, setAllEntry] = useState([]);
             
                 
     
-                <input type="text"  className="mail" name="text1" autoComplete="off" 
-                value={text1}
-                onChange={(e)=> setProductName(e.target.value)}
+                <input type="text"  className="ranj" name="ranj" autoComplete="off" 
+                
+                // onChange={(e)=> setProductName(e.target.value)}
                 placeholder="Enter Product Name"
                 />
             
-                <input type="text" className="pass" name="text2" id="password" autoComplete="off"
-                value={text2}
-                onChange={(e)=>setProductPrice(e.target.value)}
+                <input type="text" className="gone" name="gone" id="password" autoComplete="off"
+                
+                // onChange={(e)=>setProductPrice(e.target.value)}
                 placeholder="Enter Product Price"
                 />
-                <input type="text3" className="pass" name="text3" id="password" autoComplete="off"
-                value={text3}
-                onChange={(e)=>setProductDiscription(e.target.value)}
+                <input type="text" className="fron" name="fron" id="password" autoComplete="off"
+                
+                // onChange={(e)=>setProductDiscription(e.target.value)}
                 placeholder="Enter Product Description"
                 />
             </div>
-            <button type="submit" className="butt">Add Product</button>
+            <button type="submit" className="add">Add Product</button>
            </form>
     </div>
     </>
