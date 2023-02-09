@@ -1,0 +1,153 @@
+#cartpage{
+    display: flex;
+    justify-content: center;
+}
+
+#cartproductoutbox{
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px #474646;
+}
+
+#cartproducts{
+    display: flex;
+    background-color: white;
+    border: 1.2px solid #a4a4a4;
+    margin: 10px;
+    padding: 20px;
+}
+
+#cartproductimage{
+    height: 200px;
+    width: 200px;
+    margin-right: 100px;
+    padding: 6px;
+    border: 1.2px solid black;
+}
+
+#cartproductrm{
+    margin-right: 100px;
+}
+
+#cartproductname{
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#cartproductdeliveryposition{
+    margin-bottom: -10px;
+}
+
+#cartproductdelivery1{
+    font-size: 18px;
+}
+
+#cartproductdelivery2{
+    font-size: 18px;
+    color: green;
+}
+
+#cartproductprice1{
+    font-size: 30px;
+}
+
+#cartproductprice2{
+    font-size: 24px;
+    margin-left: 16px;
+    text-decoration: line-through;
+}
+
+#cartproductbutton1{
+    border: 0.5px solid black;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cartproductbutton2{
+    border: 0.5px solid black;
+    background-color: white;
+    font-size: 16px;
+}
+
+#cartproductbutton3{
+    border: 0.5px solid black;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#cartproductbutton4{
+    color: white;
+    background-color: #f76160;
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+}
+
+#cartproductbutton5{
+    color: white;
+    background-color: #6176f3;
+    border: none;
+    padding: 6px;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+#cartprices{
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px #474646;
+    margin: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+#cartprice1{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+#cartpricepinbox{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 20px;
+}
+
+#cartpriceaddressbox{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#carttableprice{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#carttablepricetotal{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+}
+
+#carttphr{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.carttablepriceright{
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    #cartproducts{
+         flex-direction: column;
+    }
+}
