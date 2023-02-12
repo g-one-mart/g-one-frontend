@@ -22,7 +22,7 @@ const Component = () => {
                 
 
                 <Route path="/cart" element={<CartPage/>} />
->>>>>>> 1efbe0cd7c6a50f5e7ff5026e597cf26cbc8e5d3
+
             </Routes>
         </>
     );

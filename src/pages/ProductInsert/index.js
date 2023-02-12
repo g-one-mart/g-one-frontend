@@ -11,6 +11,7 @@ const Component = ()=> {
 //     const newEntry = {ranj: ranj, gone: gone, fron: fron,};
 //     setAllEntry([...allEntry, newEntry]);
 //  }
+
   return (
     <>
     <div>
@@ -35,10 +36,20 @@ const Component = ()=> {
                 // onChange={(e)=>setProductPrice(e.target.value)}
                 placeholder="Enter Product Price"
                 />
+                 <input type="text" className="price" name="gone" id="password" autoComplete="off"
+                
+                // onChange={(e)=>setProductPrice(e.target.value)}
+                placeholder="Price after discount"
+                />
                 <input type="text" className="fron" name="fron" id="password" autoComplete="off"
                 
                 // onChange={(e)=>setProductDiscription(e.target.value)}
                 placeholder="Enter Product Description"
+                />
+                 <input type="text" className="item" name="gone" id="password" autoComplete="off"
+                
+                // onChange={(e)=>setProductPrice(e.target.value)}
+                placeholder="Item count"
                 />
             </div>
             <button type="submit" className="add">Add Product</button>

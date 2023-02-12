@@ -30,7 +30,7 @@ border-radius: 5px;
 }
 
 
- .ranj,.gone,.fron{
+ .ranj,.gone,.fron,.price,.item{
     justify-self: center;
     align-items: center;
     height:3em;
