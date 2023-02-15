@@ -1,10 +1,34 @@
 import "./index.css";
 import { useLocation } from "react-router-dom";
 import CardContainer from "../../components/CardContainer";
-import { discountCalculator } from "D:/Jsprojects/g-one/g-one-frontend/src/discountCalculator.js";
+import { discountCalculator } from "../../discountCalculator";
+// import React, { useEffect, useState } from "react";
 const Component = () => {
   const location = useLocation();
   const product = location.state;
+  function saveProduct() {
+    let data = {
+      productId: product._id,
+      userId: "abcsdgga",
+      name: product.name,
+      imgUrl: product.imgUrl,
+      itemCount: 5,
+      originalPrice: product.originalPrice,
+      priceAfterDiscount: product.priceAfterDiscount
+    }
+    fetch("http://localhost:4000/add-to-cart", {
+      method: "POST",
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(response => {
+      console.log("respone", response)
+    }).catch(e => {
+      console.log("e", e)
+    })
+  }
   return (
     <>
       <div className="productPage">
@@ -16,7 +40,7 @@ const Component = () => {
           />
         </div>
         <div className="productDetails">
-          <h4>{product.name}</h4>
+          <h4  >{product.name}</h4>
           <div className="itemSold">Item sold : 44</div>
           <div style={{ display: "flex", alignItems: "flex-end", gap: "4px" }}>
             <div style={{ fontSize: "26px", fontWeight: "500" }}>
@@ -49,7 +73,7 @@ const Component = () => {
             <div>7 days replacement</div>
           </div>
 
-          <button className="addToCartButton">Add to Cart</button>
+          <button type="button" onClick={saveProduct} className="addToCartButton">Add to Cart</button>
         </div>
       </div>
       <CardContainer />
