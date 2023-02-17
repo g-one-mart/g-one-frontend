@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
+import { useLogin } from "../../hooks/useLogin";
 import "./index.css";
 
 const Component = () => {
+  const { login, isloading, error } = useLogin();
+  const handleClick = async () => {
+    await login();
+    if (error) console.log(error);
+  };
   return (
     <>
       <div className="navBar">
@@ -23,6 +29,11 @@ const Component = () => {
               <i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
+        </div>
+        <div>
+          <button disabled={isloading} onClick={handleClick}>
+            Login
+          </button>
         </div>
         <div>
           <i class="fa fa-user fa-2x" aria-hidden="true"></i>
