@@ -33,3 +33,18 @@
     background-color: black;
     color:white;
 }
+.loginwithgoogle{
+    width:110px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top:11px;
+}
+.loginwithgoogle:hover{
+    transform: scale(1.03);
+}
+.Loginwidth{
+    width:300px;
+    
+}

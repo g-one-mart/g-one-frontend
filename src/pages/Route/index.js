@@ -3,7 +3,7 @@ import './index.css';
 import HomePage from "../HomePage"
 import ProductPage from "../ProductPage"
 
-import LoginPage from "../LoginPage"
+// import LoginPage from "../LoginPage"
 import ProductInsert from "../ProductInsert"
 
 import CartPage from "../CartPage"
@@ -17,11 +17,12 @@ const Component = () => {
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/product" element={<ProductPage/>} />
 
-                <Route path="/login" element={<LoginPage/>} />
+                
                 <Route path="/ProductInsert" element={<ProductInsert/>} />
                 
 
                 <Route path="/cart" element={<CartPage/>} />
+               
 
             </Routes>
         </>

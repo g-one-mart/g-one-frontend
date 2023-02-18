@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./index.css";
+import {useState} from 'react'
+import LoginPage from '../../pages/LoginPage';
 
 const Component = () => {
+ const [open,setopen]=useState(false)
   return (
     <>
+    
       <div className="navBar">
         <div>
           <Link to={"/"}>
@@ -26,6 +30,14 @@ const Component = () => {
         </div>
         <div>
           <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+        </div>
+        <div className="Loginwidth">
+          
+          <button className="loginwithgoogle"
+          onClick={()=>{setopen(true)}}>Login</button>
+
+          {open&&<LoginPage />}
+         
         </div>
       </div>
     </>
