@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { useLogin } from "../../hooks/useLogin";
+import { useLogout } from "../../hooks/useLogout";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
 
 const Component = () => {
-  const { login, isloading, error } = useLogin();
-  const handleClick = async () => {
-    await login();
-    if (error) console.log(error);
-  };
+  const { login, isloading } = useLogin();
+  const { logout } = useLogout();
+  const { user } = useAuthContext();
   return (
     <>
       <div className="navBar">
@@ -30,14 +30,18 @@ const Component = () => {
             </button>
           </div>
         </div>
-        <div>
-          <button disabled={isloading} onClick={handleClick}>
-            Login
-          </button>
-        </div>
-        <div>
-          <i className="fa fa-user fa-2x" aria-hidden="true"></i>
-        </div>
+        {user ? (
+          <div>
+            <i className="fa fa-user fa-2x" aria-hidden="true"></i>
+            <button onClick={() => logout()}>Logout</button>
+          </div>
+        ) : (
+          <div>
+            <button disabled={isloading} onClick={() => login()}>
+              Login
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
