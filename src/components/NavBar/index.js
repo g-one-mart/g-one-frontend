@@ -26,7 +26,7 @@ const Component = () => {
           </div>
           <div>
             <button className="searchButton">
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <i className="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Component = () => {
           </button>
         </div>
         <div>
-          <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+          <i className="fa fa-user fa-2x" aria-hidden="true"></i>
         </div>
       </div>
     </>
