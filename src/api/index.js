@@ -13,11 +13,8 @@ API.interceptors.request.use((req) => {
 });
 
 export const signInGoogle = (accessToken) =>
-  API.post("/users/signin", {
+  API.post("/auth/signin", {
     googleAccessToken: accessToken,
   });
 
-export const signUpGoogle = (accessToken) =>
-  API.post("/users/signup", {
-    googleAccessToken: accessToken,
-  });
+export const fetchAllProducts = () => API.get("/products/getall");
