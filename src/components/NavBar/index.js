@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import { useAuthContext } from "../../hooks/useAuthContext";
 import { useLogin } from "../../hooks/useLogin";
 import { useLogout } from "../../hooks/useLogout";
-import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
 
 const Component = () => {
@@ -32,7 +32,9 @@ const Component = () => {
         </div>
         {user ? (
           <div>
-            <i className="fa fa-user fa-2x" aria-hidden="true"></i>
+            <Link to={"/user/profile"}>
+              <i className="fa fa-user fa-2x" aria-hidden="true"></i>
+            </Link>
             <button onClick={() => logout()}>Logout</button>
           </div>
         ) : (

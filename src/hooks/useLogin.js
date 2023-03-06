@@ -1,7 +1,7 @@
-import { useState } from "react";
 import { useGoogleLogin } from "@react-oauth/google";
+import { useState } from "react";
+import { signInGoogle } from "../api/commponApi";
 import { useAuthContext } from "./useAuthContext";
-import { signInGoogle } from "../api/index";
 
 export const useLogin = () => {
   const [error, setError] = useState(null);

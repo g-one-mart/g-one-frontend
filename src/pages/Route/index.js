@@ -1,24 +1,21 @@
-import {Routes ,Route} from 'react-router-dom'
-import './index.css';
-import HomePage from "../HomePage"
-import ProductPage from "../ProductPage"
-import CartPage from "../CartPage"
+import { Route, Routes } from "react-router-dom";
+import CartPage from "../CartPage";
+import HomePage from "../HomePage";
+import ProductPage from "../ProductPage";
+import ProfilePage from "../ProfilePage";
+import "./index.css";
 
 const Component = () => {
-
-    return (
-        <>
-            <Routes>
-                <Route path="/" element={<HomePage/>} />
-                <Route path="/product" element={<ProductPage/>} />
-                <Route path="/cart" element={<CartPage/>} />
-            </Routes>
-        </>
-    );
-
-}
+  return (
+    <>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/user/profile" element={<ProfilePage />} />
+      </Routes>
+    </>
+  );
+};
 
 export default Component;
-
-
-

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchAllProducts } from "../../api/index";
+import { fetchAllProducts } from "../../api/commponApi";
 import Card1 from "../Cards/Card1";
 import "./index.css";
 
