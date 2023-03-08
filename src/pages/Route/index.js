@@ -7,7 +7,8 @@ import ProfilePage from "../ProfilePage";
 import "./index.css";
 
 const Component = () => {
-  const { user } = useAuthContext();
+  const { isLoggedIn, loading } = useAuthContext();
+  if (loading) return <div>Loading...</div>;
   return (
     <>
       <Routes>
@@ -15,11 +16,11 @@ const Component = () => {
         <Route path="/product" element={<ProductPage />} />
         <Route
           path="/cart"
-          element={user ? <CartPage /> : <Navigate to="/" />}
+          element={isLoggedIn ? <CartPage /> : <Navigate to="/" />}
         />
         <Route
           path="/user/profile"
-          element={user ? <ProfilePage /> : <Navigate to="/" />}
+          element={isLoggedIn ? <ProfilePage /> : <Navigate to="/" />}
         />
       </Routes>
     </>

@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { fetchProfile } from "../../api/protectedApi";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Component = () => {
   const [profile, setProfile] = useState();
-  const getProfile = async () => {
-    const { data } = await fetchProfile();
-    return setProfile(data.user);
-  };
+  const { loading } = useAuthContext();
   useEffect(() => {
-    getProfile();
-  }, []);
+    return async () => {
+      if (!loading) {
+        const { data } = await fetchProfile();
+        setProfile(data.user);
+      }
+    };
+  }, [loading]);
 
   if (!profile) return <div>Loading...</div>;
   const { fullName, email, profilePhoto, gender, contactNumber, address } =

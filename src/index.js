@@ -7,13 +7,13 @@ import { AuthContextProvider } from "./context/authContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <AuthContextProvider>
-        <GoogleOAuthProvider clientId="964795636967-ho85cm3ndost06uqq85iehvkhvqrl3j3.apps.googleusercontent.com">
+  <React.StrictMode>
+    <AuthContextProvider>
+      <GoogleOAuthProvider clientId="964795636967-ho85cm3ndost06uqq85iehvkhvqrl3j3.apps.googleusercontent.com">
+        <BrowserRouter>
           <App />
-        </GoogleOAuthProvider>
-      </AuthContextProvider>
-    </React.StrictMode>
-  </BrowserRouter>
+        </BrowserRouter>
+      </GoogleOAuthProvider>
+    </AuthContextProvider>
+  </React.StrictMode>
 );
