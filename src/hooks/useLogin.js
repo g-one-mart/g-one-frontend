@@ -16,7 +16,7 @@ export const useLogin = () => {
     try {
       const response = await signInGoogle(accessToken);
 
-      if (response.statusText === "OK") {
+      if (response.status === 200 || response.status === 201) {
         const { data } = response;
         localStorage.setItem("user", JSON.stringify(data));
 

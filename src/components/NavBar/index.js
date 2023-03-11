@@ -13,7 +13,7 @@ const Component = () => {
       <div className="navBar">
         <div>
           <Link to={"/"}>
-            <img src="logo.jpeg" alt="logo" width="50px" height="50px" />
+            <img src="logo.png" alt="logo" width="50px" height="50px" />
           </Link>
         </div>
         <div className="searchBox">
