@@ -1,0 +1,28 @@
+.card1{
+    width:230px;
+    height:fit-content;
+    background-color: rgba(0, 6, 40, 0.071);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: margin-top 0.2s;
+}
+
+.card1:hover{
+    margin-top: 0px;
+}
+
+.discountTag{
+    width:100px;
+    font-size: 16px;
+    background:radial-gradient(circle 40px at right, #0000 98%, rgb(0, 0, 0)) top left;
+}
+
+@media screen and (max-width: 520px) {
+    .card1 {
+        width:180px;
+    }
+  }
