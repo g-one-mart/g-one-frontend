@@ -15,8 +15,7 @@ const Component = () => {
   }, [loading]);
 
   if (!profile) return <div>Loading...</div>;
-  const { fullName, email, profilePhoto, gender, contactNumber, address } =
-    profile;
+  const { fullName, email, profilePhoto, gender, contactNumber } = profile;
   return (
     <div>
       <div className="profile-head">
