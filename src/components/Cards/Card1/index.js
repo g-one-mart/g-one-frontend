@@ -13,7 +13,7 @@ const Component = (props) => {
 
   useEffect(() => {
     setProduct(props.product);
-  }, []);
+  }, [props.product]);
 
   return (
     <>
