@@ -1,0 +1,36 @@
+#orderproductoutbox{
+     margin: 30px;
+     padding: 30px;
+     background-color: white;
+     box-shadow: 0 0 10px #474646;
+     display: block;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+#orderproducts{
+     background-color: white;
+     border: 1.2px solid #a4a4a4;
+}
+
+#orderhead{
+     display: flex;
+}
+
+.orderheading{
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.orderbody{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+}
+
+#orderproductimage{
+     height: 100px;
+    width: 100px;
+    border: 1.2px solid black;
+}

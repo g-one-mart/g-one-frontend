@@ -4,6 +4,8 @@ import CartPage from "../CartPage";
 import HomePage from "../HomePage";
 import ProductPage from "../ProductPage";
 import ProfilePage from "../ProfilePage";
+import OrdersPage from "../OrdersPage";
+import CheckoutPage from "../CheckoutPage";
 import "./index.css";
 
 const Component = () => {
@@ -22,6 +24,8 @@ const Component = () => {
           path="/user/profile"
           element={isLoggedIn ? <ProfilePage /> : <Navigate to="/" />}
         />
+        <Route path="/orders" element={<OrdersPage/>} />
+        <Route path="/checkout" element={<CheckoutPage/>} />
       </Routes>
     </>
   );
