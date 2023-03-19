@@ -1,0 +1,52 @@
+.profile-head{
+     text-align: center;
+     font-size: 30px;
+}
+
+.profile-info{
+     display: flex;
+     justify-content: center;
+}
+
+.profilephoto{
+     height: 400px;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+}
+
+.profilepi{
+     margin-top: auto;
+     margin-bottom: auto;
+     display: block;
+}
+
+.pihead{
+     text-shadow: 0 0 2px black;
+     text-decoration: underline;
+}
+
+.piname{
+     font-size: 30px;
+}
+
+.pigender{
+     font-size: 20px;
+}
+
+.piemailhead{
+     font-size: 26px;
+}
+
+.piemail{
+     font-size: 20px;
+}
+
+.pinumhead{
+     font-size: 26px;
+}
+
+.pinumber{
+     font-size: 20px;
+}
