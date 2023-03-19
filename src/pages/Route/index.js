@@ -24,8 +24,14 @@ const Component = () => {
           path="/user/profile"
           element={isLoggedIn ? <ProfilePage /> : <Navigate to="/" />}
         />
-        <Route path="/orders" element={<OrdersPage/>} />
-        <Route path="/checkout" element={<CheckoutPage/>} />
+        <Route 
+          path="/orders"
+          element={isLoggedIn ? <OrdersPage /> : <Navigate to="/" />}
+        />
+        <Route 
+          path="/checkout"
+          element={isLoggedIn ? <CheckoutPage /> : <Navigate to="/" />}
+        />
       </Routes>
     </>
   );
