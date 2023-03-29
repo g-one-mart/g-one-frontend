@@ -6,6 +6,7 @@ import ProductPage from "../ProductPage";
 import ProfilePage from "../ProfilePage";
 import OrdersPage from "../OrdersPage";
 import CheckoutPage from "../CheckoutPage";
+import LoginPage from "../LoginPage";
 import "./index.css";
 
 const Component = () => {
@@ -32,6 +33,7 @@ const Component = () => {
           path="/checkout"
           element={isLoggedIn ? <CheckoutPage /> : <Navigate to="/" />}
         />
+        <Route path="/user/login" element={ <LoginPage />} />
       </Routes>
     </>
   );

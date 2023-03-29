@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { useLogin } from "../../hooks/useLogin";
 import { useLogout } from "../../hooks/useLogout";
 import "./index.css";
 
 const Component = () => {
-  const { login, isloading } = useLogin();
   const { logout } = useLogout();
   const { user } = useAuthContext();
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary navBar">
+      <nav className="navbar navbar-expand-xxl bg-body-tertiary navBar">
         <div className="container-fluid">
           <div className="navbar-brand">
             <Link to={"/"}>
@@ -48,11 +46,11 @@ const Component = () => {
                   <button onClick={() => logout()} className="btn usericonbutton">Logout</button>
                 </div>
               ) : (
-                <div className="usericonof">
-                  <button disabled={isloading} onClick={() => login()} className="btn usericonbutton">
+                <Link to={"/user/login"} className="usericonof">
+                  <button className="btn usericonbutton">
                     Login
                   </button>
-                </div>
+                </Link>
               )}
             </div>
             <div className="nav-item carticon">

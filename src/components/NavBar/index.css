@@ -64,6 +64,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+}
+
+.usericonbutton:hover{
+  color: black;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
 }
 
 .usericonbutton{
