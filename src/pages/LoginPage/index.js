@@ -1,34 +1,19 @@
-import { Link } from "react-router-dom";
-import { useAuthContext } from "../../hooks/useAuthContext";
 import { useLogin } from "../../hooks/useLogin";
-import { useLogout } from "../../hooks/useLogout";
 import "./index.css";
 
 const LoginPage = () => {
      const { login, isloading } = useLogin();
-     const { logout } = useLogout();
-     const { user } = useAuthContext();
      return (
           <>
-               <div className="container-fluid">
-                    <div className="usericonposp">
-                         {user ? (
-                              <div className="useicons">
-                                   <Link to={"/user/profile"}>
-                                        <i className="fa fa-user fa-2x usericon" aria-hidden="true"></i>
-                                   </Link>
-                                   <button onClick={() => logout()} className="btn usericonbuttonp">
-                                        Logout
-                                   </button>
-                              </div>
-                         ) : (
-                              <div className="usericonof">
-                                   <button disabled={isloading} onClick={() => login()} className="btn usericonbuttonp">
-                                        Login
-                                   </button>
-                              </div>
-                         )}
+               <div className="google-btn usericonposp" disabled={isloading} onClick={() => login()}>
+                    <div className="google-icon-wrapper">
+                         <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"/>
                     </div>
+                    <p className="btn-text">
+                         <b>
+                              Sign in with google
+                         </b>
+                    </p>
                </div>
           </>
      );
